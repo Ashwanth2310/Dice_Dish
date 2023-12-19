@@ -279,7 +279,7 @@ body {
 }
 
 .search-result,
-.meal-container { /* Common class for default meals and search results */
+.meal-container { 
   background-color: #c5646f;
   width: 200px;
   margin: 10px;
