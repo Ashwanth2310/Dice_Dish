@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <title>🍩Dicedish - Generate Random Meals</title>
+
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Ranchers:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="index1">
+      <section class="index-child"></section>
+      <img class="cross-donut-icon" alt="" src="./public/cross-donut@2x.png" />
+
+      <button class="dicedish" id="button">Dicedish</button>
+      <div class="rectangle-parent">
+        <div class="group-child"></div>
+        <img class="group-item" alt="" src="./public/group-18119@2x.png" />
+
+        <div class="lorem-ipsum-dolor">
+          <b>Dicedish</b> is your culinary companion for spontaneous and inspired meals. Explore a world of diverse recipes or generate random meal ideas at the click of a button. <br><br>Our user-friendly interface and search feature make it easy to discover and enjoy unique dishes. Whether you're a seasoned chef or a curious cook, Dicedish is your go-to destination for delicious culinary adventures, <br>Just click on the button, or search for a dish to get started.
+        </div>
+        <img class="icon-food-sandwich" alt="" src="./public/icon--food--sandwich@2x.png" />
+
+        <img class="icon-food-pasta" alt="" src="./public/icon--food--pasta@2x.png" />
+
+        <img class="icon-vegetables-tomato" alt="" src="./public/icon--vegetables--tomato@2x.png" />
+
+        <img class="icon-fruits-watermelon" alt="" src="./public/icon--fruits--watermelon@2x.png" />
+      </div>
+      <div class="random-dish-ideas">        Dish Ideas</div>
+      
+
+      
+      <!-- Container for search input and results -->
+      <div class="search-container">
+        <input
+          id="searchInput"
+          class="index-item"
+          name="Input_box"
+          placeholder="Search Dish"
+          type="text"
+          size="50"
+          onkeydown="if (event.key === 'Enter') searchMeals()"
+        />
+        <div class="search-results" id="searchResults"></div>
+      </div>
+
+      <div class="rectangle-parent2">
+        <div class="group-inner"></div>
+        <button class="generate-random-dish" onclick="generateRandomMeal()">Generate Random Meal!</button>
+      </div>
+    </div>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+      </div>
+    </div>
+    <!-- Add a container for default meals -->
+<div class="default-meals-container" id="defaultMealsContainer"></div>
+
+
+    <script src="index.js"></script>
+  </body>
+</html>

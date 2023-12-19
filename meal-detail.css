@@ -1,0 +1,61 @@
+/* meal-detail.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #a9dfad;
+  }
+  
+  .meal-details {
+    display: flex;
+    max-width: 800px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .left-content {
+    flex: 1;
+  }
+  
+  .left-image {
+    width: 375px; 
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px; 
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .left-image:hover {
+    transform: scale(1.1);
+  }
+  
+  .right-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  #mealInstructions {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px; 
+  }
+  
+  #youtubeContainer {
+    margin-top: 20px;
+  }
+  
+  #youtubeVideo {
+    width: 100%;
+    height: 500px;
+    border-radius: 5px;
+    margin-top: 20px; 
+  }
+  
