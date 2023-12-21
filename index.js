@@ -46,13 +46,11 @@ function generateRandomMeal() {
         var meal = meals[index];
         container.querySelector(".cat-2-1-icon").src = meal.strMealThumb;
         container.querySelector(".name-of-dish").textContent = meal.strMeal;
-        // Add any additional updates for other elements in the container if needed
         container.style.display = "block"; // Show the container for search result
       } else {
         // Reset the container if there is no corresponding meal data
         container.querySelector(".cat-2-1-icon").src = "";
         container.querySelector(".name-of-dish").textContent = "Name of Dish";
-        // Add any additional resets for other elements in the container if needed
         container.style.display = "none"; // Hide the container if there's no search result
       }
     });
