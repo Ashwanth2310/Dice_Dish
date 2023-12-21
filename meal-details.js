@@ -19,13 +19,13 @@ document.addEventListener("DOMContentLoaded", function () {
           document.getElementById("mealInstructions").textContent = meal.strInstructions;
   
           // Display YouTube video if available
-          const youtubeContainer = document.getElementById("youtubeContainer");
-          if (meal.strYoutube) {
-            const youtubeVideo = document.getElementById("youtubeVideo");
-            const youtubeUrl = `https://www.youtube.com/embed/${meal.strYoutube.slice(-11)}`;
-            youtubeVideo.src = youtubeUrl;
-            youtubeContainer.style.display = "block"; // Show the YouTube container
-          }
+          // const youtubeContainer = document.getElementById("youtubeContainer");
+          // if (meal.strYoutube) {
+          //   const youtubeVideo = document.getElementById("youtubeVideo");
+          //   const youtubeUrl = `https://www.youtube.com/embed/${meal.strYoutube.slice(-11)}`;
+          //   youtubeVideo.src = youtubeUrl;
+          //   youtubeContainer.style.display = "block"; // Show the YouTube container
+          // }
         })
         .catch(error => console.error("Error fetching meal details:", error));
     }
