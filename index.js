@@ -24,7 +24,7 @@ function generateRandomMeal() {
         
   
         // Append the meal to the default meals container
-        container.innerHTML += html;
+        container.innerHTML = html;
       })
       .catch(error => console.error("Error fetching random meal:", error));
   }
